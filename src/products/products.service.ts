@@ -4,7 +4,7 @@ import { Product } from './interfaces/product.interface';
 @Injectable()
 export class ProductsService {
   private readonly products: Product[] = [];
-  private uniqueId = 1;
+  private uniqueId = 0;
 
   async findAll(): Promise<Product[]> {
     return this.products;
